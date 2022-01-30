@@ -33,6 +33,19 @@ body {
   color: var(--secondary-text-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 :root {
   --background-primary-color: #ffffff;
   --primary-text-color: #757575;
@@ -586,19 +599,6 @@ body {
   margin-left: 10px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -892,6 +892,22 @@ body {
   transition: box-shadow var(--timing-function-animation);
 }
 
+.cardset__item:hover, .cardset__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cardset__item:hover .cardset__text {
+  transform: translatey(0%);
+}
+
+.cardset__item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.cardset__item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .cardset__wrap {
   position: relative;
   overflow: hidden;
@@ -912,20 +928,26 @@ body {
   transition: transform var(--timing-function-animation);
 }
 
-.cardset-item:hover .cardset__text {
-  transform: translatey(0%);
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-.cardset-item:hover,
-.cardset-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ul {
+  margin: 0;
+  padding-left: 0;
 }
 
-.cardset-item:nth-child(3n + 3) {
-  margin-right: 0px;
+button {
+  cursor: pointer;
 }
 
-.cardset-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+img {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

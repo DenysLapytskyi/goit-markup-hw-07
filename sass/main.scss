@@ -1,6 +1,8 @@
 @import './base/common';
 
+@import './components/hidden';
 @import './components/vars';
+
 @import './layout/navigation';
 @import './layout/header';
 @import './layout/hero';
@@ -9,8 +11,9 @@
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
-
-@import './components/hidden';
 @import './layout/modal';
+
 @import './layout/portfolio-gallery';
 @import './layout/portfolio-card-set';
+
+@import './utils/reset';

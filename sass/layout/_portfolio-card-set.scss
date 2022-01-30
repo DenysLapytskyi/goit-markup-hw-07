@@ -37,6 +37,20 @@
   background: var(--background-primary-color);
   cursor: pointer;
   transition: box-shadow var(--timing-function-animation);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .cardset__text {
+    transform: translatey(0%);
+  }
+  &:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .cardset__wrap {
@@ -57,22 +71,4 @@
   background: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform var(--timing-function-animation);
-}
-
-.cardset-item:hover .cardset__text {
-  transform: translatey(0%);
-}
-
-.cardset-item:hover,
-.cardset-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.cardset-item:nth-child(3n + 3) {
-  margin-right: 0px;
-}
-
-.cardset-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
