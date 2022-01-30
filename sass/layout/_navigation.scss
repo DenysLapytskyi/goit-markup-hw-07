@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__list .nav__item + .nav__item {
+  margin-left: 50px;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #212121;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  display: flex;
+  transition: color var(--timing-function-animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

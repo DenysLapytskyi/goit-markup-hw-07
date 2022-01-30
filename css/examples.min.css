@@ -1,0 +1,2 @@
+.examples-container{width:1200px;margin:0 auto}.examples-title{text-align:center;margin-bottom:50px}.examples-list{display:flex}.examples-item{position:relative}.examples-item+.examples-item{margin-left:30px}.examles-image{z-index:1}.examples-subtitle-link{position:absolute;width:100%;height:70px;background-color:rgba(47,48,58,0.8);bottom:0;z-index:2}.examples-subtitle-link-text{font-weight:bold;position:absolute;font-size:14px;text-transform:uppercase;color:var(--links-buttons-text-color);left:83px;bottom:27px}
+/*# sourceMappingURL=examples.min.css.map */
